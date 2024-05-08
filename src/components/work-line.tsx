@@ -1,7 +1,10 @@
 import Link from "next/link";
 const WorkLine = ({ bg, link }: any) => {
   return (
-    <Link href={link}>
+    <Link
+      target="_blank"
+      href={link}
+    >
       <div className="carousel-item">
         <div className="h-[440px] w-[660px] border-white p-2 border-[1px] cursor-pointer">
           <div

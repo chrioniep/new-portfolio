@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Image from "next/image";
@@ -11,6 +12,7 @@ import {
   LinkedinIcon,
   PhoneCallIcon,
   MailIcon,
+  GithubIcon,
 } from "lucide-react";
 import {
   AwsIcon,
@@ -452,8 +454,7 @@ export default function Home() {
             <p className="text-[#EF6D58]">Contact</p>
             <h3 className="text-4xl text-white font-bold">Contact Me</h3>
             <p className="text-white">
-              A digital agency is a business you hire to outsource your
-              <br /> digital marketing efforts, instead of handling in-house.
+              Reach Out and Let's Turn Ideas into Reality!
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
@@ -464,11 +465,26 @@ export default function Home() {
                   />
                 </div>
                 <a
-                  href="www.linkedin.com/in/crionieponde/"
+                  href="https://www.linkedin.com/in/crionieponde/"
                   target="_blank"
                   className="font-semibold text-white text-md hover:underline"
                 >
                   crionieponde
+                </a>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="flex items-center justify-center w-10 h-10 p-2 bg-[#EF6D58] rounded-full">
+                  <GithubIcon
+                    stroke={"white"}
+                    fill={"white"}
+                  />
+                </div>
+                <a
+                  href="https://github.com/chrioniep"
+                  target="_blank"
+                  className="font-semibold text-white text-md hover:underline"
+                >
+                  my github
                 </a>
               </div>
               <div className="flex items-center space-x-4">
