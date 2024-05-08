@@ -53,12 +53,6 @@ export default function Home() {
   };
   return (
     <>
-      <Head>
-        <link
-          rel="shortcut icon"
-          href="/favicon.ico"
-        />
-      </Head>
       <section className="bg-[#28293E] min-h-screen scroll-smooth">
         <div className="z-10 top-0 w-full py-5 px-12 lg:px-32  flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -365,20 +359,20 @@ export default function Home() {
         <div className="flex min-h-[6rem] min-w-[18rem] max-w-8xl flex-wrap items-center justify-center">
           <div className="carousel carousel-start">
             <WorkLine
-              bg={"work-1.jpeg"}
-              title={"SOFA 1"}
+              bg={"/works/work-1.jpeg"}
+              link={"#"}
             />
             <WorkLine
-              bg={"work-2.jpeg"}
-              title={"SOFA 2"}
+              bg={"/works/work-3.jpeg"}
+              link={"https://meteorite-strike.web.app/"}
             />
             <WorkLine
-              bg={"work-1.jpeg"}
-              title={"SOFA 3"}
+              bg={"/works/work-4.jpeg"}
+              link={"https://lisapo-studio.web.app/"}
             />
             <WorkLine
-              bg={"work-2.jpeg"}
-              title={"SOFA 4"}
+              bg={"/works/work-5.jpeg"}
+              link={"https://perishopp-web.web.app/"}
             />
           </div>
         </div>
