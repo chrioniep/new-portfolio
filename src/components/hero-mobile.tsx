@@ -19,9 +19,9 @@ export const HeroMobile = () => {
           Fullstack web
           <br /> developer
         </h2>
-        <p className="text-gray-400">
-          Agency provides a full service range including technical
-          <br /> skills, design, business understanding.
+        <p className="text-gray-400 mb-6">
+          Highly skilled Fullstack developer with over
+          <br /> 5 years of industry experience
         </p>
         <button className="text-white uppercase hover:border-2 border-[#EF6D58] hover:bg-transparent hover:text-[#EF6D58] bg-[#EF6D58] font-semibold px-6 py-2 rounded-md">
           see my work
