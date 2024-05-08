@@ -41,8 +41,16 @@ import HeroMobile from "@/components/hero-mobile";
 import TechLine from "@/components/tech-line";
 import WorkLine from "@/components/work-line";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
+  const goToWorks = () => {
+    window.location.href = "#works";
+  };
+
+  const goToContact = () => {
+    window.location.href = "#contact";
+  };
   return (
     <>
       <Head>
@@ -51,7 +59,7 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-      <section className="bg-[#28293E] min-h-screen">
+      <section className="bg-[#28293E] min-h-screen scroll-smooth">
         <div className="z-10 top-0 w-full py-5 px-12 lg:px-32  flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Image
@@ -63,28 +71,56 @@ export default function Home() {
             <h3 className="text-white font-semibold text-2xl">CRIONI EPONDE</h3>
           </div>
           <div className="hidden lg:flex justify-between p-3 text-white space-x-8">
-            <a className="hover:underline cursor-pointer">About</a>
-            <a className="hover:underline cursor-pointer">Skills</a>
-            <a className="hover:underline cursor-pointer">Works</a>
+            <a
+              href="#about"
+              className="hover:underline cursor-pointer"
+            >
+              About
+            </a>
+            <a
+              href="#skills"
+              className="hover:underline cursor-pointer"
+            >
+              Skills
+            </a>
+            <a
+              href="#works"
+              className="hover:underline cursor-pointer"
+            >
+              Works
+            </a>
           </div>
-          <button className="hover:bg-white hidden lg:flex hover:text-black rounded-lg px-8 py-2 bg-transparent text-white text-md border-[1px] border-white">
+          <Link
+            href={"#contact"}
+            className="hover:bg-white hidden cursor-pointer lg:flex hover:text-black rounded-lg px-8 py-2 bg-transparent text-white text-md border-[1px] border-white"
+          >
             Contact
-          </button>
+          </Link>
         </div>
         <div className="hidden md:flex justify-around items-center min-h-screen px-24">
           <div className="space-y-8">
             <h4 className="text-[#EF6D58] font-normal">Crioni Eponde Babili</h4>
+
             <h2 className="font-bold md:text-4xl lg:text-6xl text-white">
               Fullstack web
               <br /> developer
             </h2>
-            <p className="text-gray-400">
-              Agency provides a full service range including technical
-              <br /> skills, design, business understanding.
+
+            <p className="text-gray-400 mb-6">
+              Highly skilled Fullstack developer with over
+              <br /> 5 years of industry experience
             </p>
-            <button className="text-white uppercase hover:border-2 border-[#EF6D58] hover:bg-transparent hover:text-[#EF6D58] bg-[#EF6D58] font-semibold px-6 py-2 rounded-md">
-              see my work
+            <button
+              onClick={() => goToWorks()}
+              className="text-white  uppercase hover:border-2 border-[#EF6D58] hover:bg-transparent hover:text-[#EF6D58] bg-[#EF6D58] font-semibold px-6 py-2 rounded-md"
+            >
+              see my works
             </button>
+
+            {/* 
+            <button  className="text-white uppercase hover:border-2 border-[#EF6D58] hover:bg-transparent hover:text-[#EF6D58] bg-[#EF6D58] font-semibold px-6 py-2 rounded-md">
+              see my work
+            </button> */}
           </div>
           <div className="relative">
             <Image
@@ -140,14 +176,17 @@ export default function Home() {
         </div>
         <HeroMobile />
       </section>
-      <section className="bg-[#f3d1bfd9] min-h-screen p-24 space-y-8">
+      <section
+        id="skills"
+        className="bg-[#f3d1bfd9] min-h-screen p-24 space-y-8"
+      >
         <div className="flex flex-col items-center">
-          <h3 className="uppercase text-[#EF6D58] mb-4">service</h3>
+          <h3 className="uppercase text-[#EF6D58] mb-4">Skills</h3>
           <h1 className="font-bold text-3xl md:text-6xl text-center text-[#391400]">
-            How I Can
+            My Arsenal of Languages and
           </h1>
           <h1 className="font-bold text-3xl md:text-6xl text-center text-[#391400]">
-            Help You With
+            Frameworks
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -162,8 +201,7 @@ export default function Home() {
               <h3 className="font-semibold text-2xl">Frontend</h3>
             </div>
             <p className="text-[#39140083]">
-              Agency is a business you hire to outsource your digital marketing
-              efforts, instead of handling in-house.
+              The Palette of Frontend Technologies
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               <TechLine
@@ -211,10 +249,7 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-2xl">Backend</h3>
             </div>
-            <p className="text-[#39140083]">
-              Agency is a business you hire to outsource your digital marketing
-              efforts, instead of handling in-house.
-            </p>
+            <p className="text-[#39140083]">Backend Languages and Frameworks</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               <TechLine
                 icon={<ExpressIcon />}
@@ -253,10 +288,7 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-2xl">Databases</h3>
             </div>
-            <p className="text-[#39140083]">
-              Agency is a business you hire to outsource your digital marketing
-              efforts, instead of handling in-house.
-            </p>
+            <p className="text-[#39140083]">The Palette of database</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               <TechLine
                 icon={<MysqlIcon />}
@@ -284,8 +316,7 @@ export default function Home() {
               <h3 className="font-semibold text-2xl">Cloud / Tools</h3>
             </div>
             <p className="text-[#39140083]">
-              Agency is a business you hire to outsource your digital marketing
-              efforts, instead of handling in-house.
+              Cloud technologies, ops, and developement tools
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               <TechLine
@@ -316,7 +347,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#28293E] min-h-screen w-full space-y-32 py-24">
+      <section
+        id="works"
+        className="bg-[#28293E] min-h-screen w-full space-y-32 py-24"
+      >
         <div className="flex justify-between items-end px-24">
           <div className="space-y-5">
             <h3 className="text-[#EF6D58] uppercase text-md font-thin">
@@ -349,7 +383,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#f3d1bfd9] min-h-screen p-24 space-y-8">
+      <section
+        id="about"
+        className="bg-[#f3d1bfd9] min-h-screen p-24 space-y-8"
+      >
         <div className="block lg:flex space-x-12 items-center">
           <Image
             src="/about.svg"
@@ -360,17 +397,26 @@ export default function Home() {
           <div className="space-y-8">
             <p className="uppercase text-[#EF6D58] text-md">Crioni Eponde</p>
             <h2 className="text-[#391400] font-bold text-3xl lg:text-6xl">
-              Professional <br /> Web Designer
+              Fullstack <br /> Web Develope
             </h2>
             <p className="text-[#391400] text-lg">
-              Provides a full service range
+              Highly skilled Fullstack developer
             </p>
             <p className="text-[#391400]">
-              Ability to put themselves in the merchants shoes. It is meant to
-              partner on the long run, and work as an extension of the merchants
-              team.
+              with over 5 years of experience developing various full-stack
+              solutions within tight timelines. Skilled in guiding projects from
+              conceptualization to deployment. Proficient in coding web apps for
+              asset inspection & verification processes, necessitating data
+              encryption, improving app performance, optimizing UX, and
+              translating UI designs into intuitive code. Committed to
+              continuous learning and incorporating emerging industry trends and
+              technologies into projects for creating innovative and
+              user-centric solutions.
             </p>
-            <button className="text-[#391400] uppercase font-bold shadow-md py-2 px-4 bg-white rounded-md">
+            <button
+              onClick={() => goToContact()}
+              className="text-[#391400] uppercase font-bold shadow-md py-2 px-4 bg-white rounded-md"
+            >
               Contact me
             </button>
           </div>
@@ -396,7 +442,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#28293E] block lg:flex justify-between min-h-screen px-24">
+      <section
+        id="contact"
+        className="bg-[#28293E] block lg:flex justify-between min-h-screen px-24"
+      >
         <Image
           className=""
           src={"/contact.svg"}
