@@ -1,5 +1,9 @@
 import Image from "next/image";
 export const HeroMobile = () => {
+  const goToWorks = () => {
+    window.location.href = "#works";
+  };
+
   return (
     <div className="block md:hidden min-h-screen px-6">
       <div className="flex justify-center">
@@ -23,8 +27,11 @@ export const HeroMobile = () => {
           Highly skilled Fullstack developer with over
           <br /> 5 years of industry experience
         </p>
-        <button className="text-white uppercase hover:border-2 border-[#EF6D58] hover:bg-transparent hover:text-[#EF6D58] bg-[#EF6D58] font-semibold px-6 py-2 rounded-md">
-          see my work
+        <button
+          onClick={() => goToWorks()}
+          className="text-white  uppercase hover:border-2 border-[#EF6D58] hover:bg-transparent hover:text-[#EF6D58] bg-[#EF6D58] font-semibold px-6 py-2 rounded-md"
+        >
+          see my works
         </button>
       </div>
     </div>
