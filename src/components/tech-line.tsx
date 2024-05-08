@@ -9,7 +9,7 @@ const TechLine = ({ name, icon }: any) => {
       >
         {icon}
       </div>
-      <h3 className="text-lg">{name}</h3>
+      <h3 className="text-lg dark:text-black">{name}</h3>
     </div>
   );
 };

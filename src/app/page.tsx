@@ -186,7 +186,7 @@ export default function Home() {
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <div className="border-2 border-[#ceb2a2] border-text-[#391400] w-full p-8 space-y-8">
+          <div className="border-2 dark:border-[#39140069] border-[#ceb2a2] border-text-[#391400] w-full p-8 space-y-8">
             <div className="flex items-center space-x-3">
               <div className="flex items-center justify-center w-10 h-10 md:w-20 md:h-20 bg-[#EF6D58] rounded-full">
                 <Monitor
@@ -194,7 +194,9 @@ export default function Home() {
                   fill={"white"}
                 />
               </div>
-              <h3 className="font-semibold text-2xl">Frontend</h3>
+              <h3 className="font-semibold dark:text-[#391400] text-2xl">
+                Frontend
+              </h3>
             </div>
             <p className="text-[#39140083]">
               The Palette of Frontend Technologies
@@ -235,7 +237,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-2 border-[#ceb2a2] border-text-[#391400] w-full p-8 space-y-8">
+          <div className="border-2 dark:border-[#39140069] border-[#ceb2a2] border-text-[#391400] w-full p-8 space-y-8">
             <div className="flex items-center space-x-3">
               <div className="flex items-center justify-center w-10 h-10 md:w-20 md:h-20 bg-[#EF6D58] rounded-full">
                 <Server
@@ -243,7 +245,9 @@ export default function Home() {
                   fill={"white"}
                 />
               </div>
-              <h3 className="font-semibold text-2xl">Backend</h3>
+              <h3 className="font-semibold dark:text-[#391400] text-2xl">
+                Backend
+              </h3>
             </div>
             <p className="text-[#39140083]">Backend Languages and Frameworks</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
@@ -274,15 +278,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-2 border-[#ceb2a2] border-text-[#391400] w-full p-8 space-y-8">
+          <div className="border-2 dark:border-[#39140069] border-[#ceb2a2] border-text-[#391400] w-full p-8 space-y-8">
             <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-8 p-2 h-8 md:w-20 md:h-20 bg-[#EF6D58] rounded-full">
+              <div className="flex items-center justify-center w-10 h-10 md:w-20 md:h-20 bg-[#EF6D58] rounded-full">
                 <Database
                   stroke={"white"}
                   fill={"white"}
                 />
               </div>
-              <h3 className="font-semibold text-2xl">Databases</h3>
+              <h3 className="font-semibold dark:text-[#391400] text-2xl">
+                Databases
+              </h3>
             </div>
             <p className="text-[#39140083]">The Palette of database</p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
@@ -301,18 +307,20 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-2 border-[#ceb2a2] border-text-[#391400] w-full p-8 space-y-8">
+          <div className="border-2 dark:border-[#39140069] border-[#ceb2a2] border-text-[#391400] w-full p-8 space-y-8">
             <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-8 h-8 md:w-20 p-2 md:h-20 bg-[#EF6D58] rounded-full">
+              <div className="flex items-center justify-center w-10 h-10 md:w-20 md:h-20 bg-[#EF6D58] rounded-full">
                 <CloudCog
                   stroke={"white"}
                   fill={"white"}
                 />
               </div>
-              <h3 className="font-semibold text-2xl">Cloud / Tools</h3>
+              <h3 className="font-semibold dark:text-[#391400] text-2xl">
+                Cloud / Tools
+              </h3>
             </div>
             <p className="text-[#39140083]">
-              Cloud technologies, ops, and developement tools
+              Cloud technologies and developement tools
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               <TechLine
@@ -383,7 +391,7 @@ export default function Home() {
         id="about"
         className="bg-[#f3d1bfd9] min-h-screen p-6 lg:p-24 space-y-8"
       >
-        <div className="block lg:flex space-x-12 items-center">
+        <div className="block lg:flex space-x-6 lg:space-x-12 items-center">
           <Image
             src="/about.svg"
             alt="about-pic"
@@ -417,23 +425,25 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="border-2 space-x-7 h-[176px] flex items-center py-3 px-9">
+        <div className="grid grid-cols-1 gap-1 md:grid-cols-2">
+          <div className="border-2 dark:border-[#39140069] space-x-7 h-[176px] flex items-center py-3 px-9">
             <div className="flex items-center justify-center w-10 h-10 md:w-20 md:h-20 bg-[#EF6D58] rounded-full">
               <Calendar stroke={"white"} />
             </div>
             <div>
               <h3 className="text-[#28293E] text-4xl font-bold">5</h3>
-              <p className="font-light">Year of experience</p>
+              <p className="font-light dark:text-[#391400]">
+                Year of experience
+              </p>
             </div>
           </div>
-          <div className="border-2 space-x-7 h-[176px] flex items-center py-3 px-9">
+          <div className="border-2 dark:border-[#39140069] space-x-7 h-[176px] flex items-center py-3 px-9">
             <div className="flex items-center justify-center w-10 h-10 md:w-20 md:h-20 bg-[#EF6D58] rounded-full">
               <Briefcase stroke={"white"} />
             </div>
             <div>
               <h3 className="text-[#28293E] text-4xl font-bold">15</h3>
-              <p className="font-thin">Projects Done</p>
+              <p className="font-thin dark:text-[#391400]">Projects Done</p>
             </div>
           </div>
         </div>
