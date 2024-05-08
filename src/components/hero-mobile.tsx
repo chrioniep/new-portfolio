@@ -1,7 +1,7 @@
 import Image from "next/image";
 export const HeroMobile = () => {
   return (
-    <div className="block md:hidden min-h-screen px-24">
+    <div className="block md:hidden min-h-screen px-6">
       <div className="flex justify-center">
         <Image
           width={316}

@@ -56,7 +56,7 @@ export default function Home() {
   return (
     <>
       <section className="bg-[#28293E] min-h-screen scroll-smooth">
-        <div className="z-10 top-0 w-full py-5 px-12 lg:px-32  flex items-center justify-between">
+        <div className="z-10 top-0 w-full py-5 px-6 lg:px-32  flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Image
               alt="mylogo"
@@ -174,7 +174,7 @@ export default function Home() {
       </section>
       <section
         id="skills"
-        className="bg-[#f3d1bfd9] min-h-screen p-24 space-y-8"
+        className="bg-[#f3d1bfd9] min-h-screen p-6 lg:p-24 space-y-8"
       >
         <div className="flex flex-col items-center">
           <h3 className="uppercase text-[#EF6D58] mb-4">Skills</h3>
@@ -345,9 +345,9 @@ export default function Home() {
       </section>
       <section
         id="works"
-        className="bg-[#28293E] min-h-screen w-full space-y-32 py-24"
+        className="bg-[#28293E] min-h-screen w-full space-y-32 py-6 lg:py-24"
       >
-        <div className="flex justify-between items-end px-24">
+        <div className="flex justify-between items-end px-6 lg:px-24">
           <div className="space-y-5">
             <h3 className="text-[#EF6D58] uppercase text-md font-thin">
               portfolio
@@ -381,7 +381,7 @@ export default function Home() {
       </section>
       <section
         id="about"
-        className="bg-[#f3d1bfd9] min-h-screen p-24 space-y-8"
+        className="bg-[#f3d1bfd9] min-h-screen p-6 lg:p-24 space-y-8"
       >
         <div className="block lg:flex space-x-12 items-center">
           <Image
@@ -440,7 +440,7 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="bg-[#28293E] block lg:flex justify-between min-h-screen px-24"
+        className="bg-[#28293E] block lg:flex justify-between min-h-screen px-6 py-6 lg:px-24"
       >
         <Image
           className=""
