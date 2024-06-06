@@ -369,8 +369,8 @@ export default function Home() {
         <div className="flex min-h-[6rem] min-w-[18rem] max-w-8xl flex-wrap items-center justify-center">
           <div className="carousel carousel-start">
             <WorkLine
-              bg={"/works/work-1.jpeg"}
-              link={"#"}
+              bg={"/works/work-6.jpeg"}
+              link={"https://casezanaat.vercel.app/"}
             />
             <WorkLine
               bg={"/works/work-3.jpeg"}
