@@ -74,7 +74,7 @@ export const DATA = {
       start: "January 2022",
       end: "Present",
       description:
-        "I Integrated biometric identification SDKs, enabling precise identification with liveness detection, I've also design and implemented over 50 reusable user interfaces for web applications, adhering to modern UI Design Principles and Guidelines, reducing development time by 30% and achieving a consistent and visually appealing user interface across applications",
+        "Integrated biometric identification SDKs with Next.js, enabling precise user authentication with liveness detection, enhancing security and reducing false positives by 20%. Developed 50+ reusable UI components using React and Next.js, reducing development time by 30% and ensuring consistency across scalable web applications.Automated testing processes using Python-based frameworks, reducing bug-related delays by 50% and improving code quality, leading to faster and more reliable deployments.",
     },
     {
       company: "Infini Filed Services",
@@ -86,7 +86,7 @@ export const DATA = {
       start: "January 2021",
       end: "January 2022",
       description:
-        "I Developed a questionnaire module similar to Google Forms using React and advanced optimization hooks, streamlining data collection and improving efficiency for field inspectors, reducing data entry time by 30% I've also integrated live video and audio using Agora-rtc and React enabling field inspectors to capture pictures from the live video feed while receiving instruction, increasing productivity by 25%",
+        "Built a questionnaire module similar to Google Forms using React and advanced optimization hooks, streamlining data collection and improving efficiency for field inspectors, reducing data entry time 	by 30%. Integrated live video and audio using Agora-rtc and React enabling field inspectors to capture pictures from the live video feed while receiving instruction, increasing productivity by 25% Optimized the speed of an algorithm to select relevant user feedback",
     },
     {
       company: "Peferct Technologies SARL",
@@ -98,7 +98,7 @@ export const DATA = {
       start: "March 2018",
       end: "Dec 2020",
       description:
-        "I implemented multiple web applications, contributing to the development and delivery of various projects, and implemented new functionalities and integrated a notification system using Firebase & Firestore, improving user engagement and communication",
+        "Integrated testing frameworks such as Jest and React Testing Library to maintain a high standard of code coverage, reducing the number of bugs in production by 15%. Collaborated closely with UX/UI designers and backend developers to create intuitive and visually appealing user interfaces, ensuring seamless integration of APIs and backend systems. Enhanced application accessibility, adhering to WCAG standards, resulting in a 20% improvement in usability for users with disabilities. Introduced TypeScript into the frontend architecture to improve code quality, catching errors early in development and enhancing collaboration across teams.",
     },
   ],
   education: [
