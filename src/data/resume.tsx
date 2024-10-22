@@ -26,7 +26,11 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    {
+      href: "https://drive.google.com/file/d/10JMJw09IsDUh7BNqoCHBUy5SFmEI7kBk/view?usp=drive_link",
+      icon: NotebookIcon,
+      label: "CV",
+    },
   ],
   contact: {
     email: "eponde26@gmail.com",
@@ -125,7 +129,7 @@ export const DATA = {
       href: "https://logozanaat.app",
       dates: "Aug 2024 - Present",
       active: true,
-      description: "Web tool to create simple & unique logo",
+      description: "Web tool to create simple & unique logo with AI",
       technologies: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
       links: [
         {
