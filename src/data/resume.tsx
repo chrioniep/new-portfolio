@@ -69,6 +69,17 @@ export const DATA = {
 
   work: [
     {
+      company: "KADEA Software",
+      href: "https://kadea.co",
+      badges: [],
+      location: "Kinshasa",
+      title: "Software Engineer",
+      logoUrl: "/companies/kadea.jpeg",
+      start: "March 2025",
+      end: "Present",
+      description: "",
+    },
+    {
       company: "Multivers Technologies",
       href: "https://multivers.tech",
       badges: [],
@@ -76,7 +87,7 @@ export const DATA = {
       title: "Fullstack Engineer",
       logoUrl: "/companies/multivers.png",
       start: "January 2022",
-      end: "Present",
+      end: "November 2024",
       description:
         "Integrated biometric identification SDKs with Next.js, enabling precise user authentication with liveness detection, enhancing security and reducing false positives by 20%. Developed 50+ reusable UI components using React and Next.js, reducing development time by 30% and ensuring consistency across scalable web applications.Automated testing processes using Python-based frameworks, reducing bug-related delays by 50% and improving code quality, leading to faster and more reliable deployments.",
     },
