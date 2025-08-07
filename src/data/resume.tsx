@@ -184,6 +184,30 @@ export const DATA = {
       video: "",
     },
     {
+      title: "HireMatch",
+      href: "https://hire-match-nine.vercel.app/",
+      dates: "August 2025",
+      active: true,
+      description:
+        "A platform for job seekers to match there resume with a job offer",
+      technologies: [
+        "React",
+        "React-Router",
+        "Typescript",
+        "TailwindCSS",
+        "Puter.js",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://hire-match-nine.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/works/work-7.jpeg",
+      video: "",
+    },
+    {
       title: "Fireball Meteorite Strikes",
       href: "https://meteorite-strike.web.app/searchpage",
       dates: "April 2022 - Jul 2022",
