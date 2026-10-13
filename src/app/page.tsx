@@ -146,6 +146,7 @@ export default function Page() {
                   href={project.href}
                   key={project.title}
                   title={project.title}
+                  isBeta={project.isBeta}
                   description={project.description}
                   dates={project.dates}
                   tags={project.technologies}

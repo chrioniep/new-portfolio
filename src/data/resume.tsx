@@ -20,6 +20,8 @@ export const DATA = {
     "Postgres",
     "Prisma",
     "TailwindCSS",
+    "RAG",
+    "Machine Learning",
     "HTML",
     "CSS",
     "FastAPI",
@@ -135,6 +137,25 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Onion study",
+      href: "https://onionstudy.com",
+      dates: "Aug 2024 - Present",
+      active: true,
+      description:
+        "Onion study is an AI study coach that turns your own course materials into active recall study sessions: it chunks the material, generates questions from it, and schedules the reviews by spaced repetition",
+      technologies: ["Next.js", "Typescript", "Python", "RAG", "AI", "Docker"],
+      isBeta: true,
+      links: [
+        {
+          type: "Website",
+          href: "https://onionstudy.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/onion.jpeg",
+      video: "",
+    },
     {
       title: "LogoZanaat",
       href: "https://logozanaat.app",

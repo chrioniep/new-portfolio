@@ -17,6 +17,7 @@ interface Props {
   description: string;
   dates: string;
   tags: readonly string[];
+  isBeta?: boolean;
   link?: string;
   image?: string;
   video?: string;
@@ -34,6 +35,7 @@ export function ProjectCard({
   description,
   dates,
   tags,
+  isBeta,
   link,
   image,
   video,
@@ -72,7 +74,14 @@ export function ProjectCard({
       </Link>
       <CardHeader className="px-2">
         <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
+          <CardTitle className="mt-1 text-base">
+            {title}{" "}
+            {isBeta && (
+              <span className="text-xs text-red-500 bg-red-100 px-2 py-[2px] rounded-md">
+                in βeta
+              </span>
+            )}
+          </CardTitle>
           <time className="font-sans text-xs">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
@@ -101,8 +110,15 @@ export function ProjectCard({
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+              <Link
+                href={link?.href}
+                key={idx}
+                target="_blank"
+              >
+                <Badge
+                  key={idx}
+                  className="flex gap-2 px-2 py-1 text-[10px]"
+                >
                   {link.icon}
                   {link.type}
                 </Badge>
